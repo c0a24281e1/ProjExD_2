@@ -51,7 +51,6 @@ def gameover(screen: pg.Surface) -> None:
             bb_img = pg.surface((20*r, 20*r))
             pg.draw.circle(bb_img,(255,0,0),(10*r,10*r),10*r)
             bb_imgs.append(bb_img)
-        bb_accs = [a for a in range(1,11)]
 
     
     screen.blit(black, (0,0,WIDTH,HEIGHT))
