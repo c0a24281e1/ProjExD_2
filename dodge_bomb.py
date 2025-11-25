@@ -29,6 +29,10 @@ def check_bound(rct:pg.Rect) -> tuple[bool, bool]:
     return yoko, tate
 
 def gameover(screen: pg.Surface) -> None:
+    """
+    gameover関数
+    こうかとんが爆弾にぶつかったときblackがscreenにblitされる
+    """
     black = pg.Surface((WIDTH,HEIGHT))
     pg.draw.rect(black, (0,0,0),(0,0,WIDTH,HEIGHT))
     black.set_alpha(200)
